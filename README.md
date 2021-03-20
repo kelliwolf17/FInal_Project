@@ -40,3 +40,12 @@ For the fast food data, I need to figure out what we are going to use and how be
 
 For the gym data, the gym dataframe is called gym_df. I did not reduce the columns - need to think about what to use.
 
+## Merging all the different datasets
+
+I merged all these df into one - merged_df since they have all the same columns.
+age2_df, bmi2_df, diabetes2_df, education2_df, exercise2_df, income2_df, sex2_df, tobacco2_df, hypertension2_df
+
+I think we will start with the the merged_df for the model and then we will learn some stuff and predict based on these factors. 
+
+We can run a seperate correlation analysis by grouping all the merged_df data by state, and then join the gym and fast food data to than and run an analysis to see trends by state.
+
