@@ -9,4 +9,4 @@ Mongo is the database we intend to use, and we will integrate Flask to display t
 SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is  "FILL IN THE BLANK HERE"
 
 ## Dashboard
-In addition to using a Flask template, we will also use Tableau Public to create a Dashboard and 
+In addition to using a Flask template, we will also use Tableau Public to create a Dashboard and present the data in an efficient and interactive manner.
