@@ -1,0 +1,14 @@
+show databases;
+
+create database final_project;
+
+use final_project;
+
+show tables;
+
+Select * from merged_df;
+
+Select count(*) from merged_df;
+
+SHOW COLUMNS FROM `merged_df`;
+
