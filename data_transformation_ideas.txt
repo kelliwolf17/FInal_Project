@@ -1,0 +1,34 @@
+Transforming data using R:
+
+Use tidyverse function in R to add a column for the actual diabetes value = data value * sample size. 
+
+Example code: 
+> demo_table <- demo_table %>% mutate(Mileage_per_Year=Total_Miles/(2020-Year),IsActive=TRUE) #add columns to original data frame
+
+
+We can also reshape the data using the spread() funciton. We need to take Topic and Response from Long to Wide. Topic is column name and response is column data.
+Example code. 
+> wide_table <- long_table %>% spread(key="Metric",value="Score")
+
+
+https://courses.bootcampspot.com/courses/322/pages/15-dot-2-5-transform-group-and-reshape-data-using-the-tidyverse-package?module_item_id=94949
+
+
+Dropping rows:
+I think we should drop the rows with this text:
+Median value reported with no confidence intervals
+
+Drop unneccesary columnns:
+Id, year, data value type, data value, data  value footnote symbol, data value footnote, sample size, stratification, stratification type, indicatorID, locationorder, partentstatedisplayorder, 
+
+Then move Dataframe back to python/jupyter notebook and:
+
+run one hot encoder on the categorical features: age, diabetes, tobacco, etc.
+
+Check that the remaining # values to include in the analysis are numbers/not strings. - new data value.
+
+?????Do we want to only keep rows with a lower range of confidence intervals? (subtracting high from low confidence limit) http://www.biostathandbook.com/confidence.html
+
+Maybe we do this secondarily if we want to improve the accuracy of our model?
+
+Then we scale the data and split it.
