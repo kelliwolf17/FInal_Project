@@ -1,0 +1,26 @@
+show databases;
+
+create database final_project;
+
+use final_project;
+
+show tables;
+
+Select *
+from merged_df;
+
+SHOW COLUMNS FROM `merged_df`;
+
+Select province, count(*) as "Total"
+from fast_food_restaurants
+group by 1;
+
+Select `State Abbreviation`,
+       Total as "Gym Total",
+       `Restaurant Total`
+from gym_data a
+         join (Select province, count(*) as "Restaurant Total" from fast_food_restaurants group by 1) t1
+              on a.`State Abbreviation` = t1.province
+group by 1;
+
+Select * from gym_data;
