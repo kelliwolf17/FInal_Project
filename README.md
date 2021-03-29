@@ -1,6 +1,6 @@
 # Selected topic
 
-For the purpose of this project, we have decided to analyze diabetes and it's associated risk factors. 
+For the purpose of this project, we have decided to analyze diabetes and it's associated risk factors in order to predict if someone will be diagnosed with diabetes in their lifetime.
 
 # Reason we selected this topic
 
@@ -14,3 +14,6 @@ For each of the features relating to diabetes risk factors, we were able to pull
 Primarily, we want to know which risk factors have the strongest correlation to diabetes so we can add these features to our machine learning model and find out whether or not they are a good predictor.
 
 We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
+
+
+
