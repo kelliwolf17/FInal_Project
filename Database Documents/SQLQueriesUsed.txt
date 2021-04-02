@@ -7,20 +7,15 @@ use final_project;
 show tables;
 
 Select *
-from merged_df;
+from clean_bmi;
 
-SHOW COLUMNS FROM `merged_df`;
+Select *
+from clean_gym;
 
-Select province, count(*) as "Total"
-from fast_food_restaurants
-group by 1;
+Select *
+from clean_diabetes;
 
-Select `State Abbreviation`,
-       Total as "Gym Total",
-       `Restaurant Total`
-from gym_data a
-         join (Select province, count(*) as "Restaurant Total" from fast_food_restaurants group by 1) t1
-              on a.`State Abbreviation` = t1.province
-group by 1;
+Select *
+from clean_restaurant;
 
-Select * from gym_data;
+SHOW COLUMNS FROM `clean_bmi`;
