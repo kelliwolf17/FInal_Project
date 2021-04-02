@@ -1,44 +1,43 @@
-
-merged_df as  md
+clean_bmi as  cb
 -------------
-ID PK int
-Year int
-LocationAbbr text FK
-Topic text
-Response text
-Data_Value_Type text
-Data_Value float
-Data_Value_Footnote_Symbol text
-Data_Value_Footnote text
-Low_Confidence_Limit float
-High_Confidence_Limit float
-Sample_Size float
-Stratification text
-StratificationType text
-IndicatorId text
-LocationOrder float
-ParentStateDisplayOrder float
+Gender text
+State text fk >-< cg.State
+State_Rate double
+Height int
+Weight double
+BMI double
+Age int
+Rate double
 
-fast_food_restaurants as ffr
+clean_diabetes as cd
 -------------
-full_address PK text FK >-< md.LocationAbbr
-address text
+Pregnancies int
+Glucose int
+BloodPressure int
+SkinThickness int
+Insulin int
+BMI double
+DiabetesPedigreeFunction double
+Age int
+Outcome int
+
+
+clean_gym as cg
+------------
+State text pk fk 
+Common_Type text
+Total int
+Population_2016 int
+People_per_Gym double
+Gyms_per_Capita double
+
+
+clean_restaurant as cr
+------------
 city text
 country text
-keys text
-latitude float
-longitude float
+latitude double
+longitude double
 name text
-postalCode int
-province text
-website text
-
-gym_data as gd
--------------
-State PK text
-most_gyms_in_state text
-total int
-population(2016) int
-people_per_gym int
-gyms_per_capita(100,000) float
-state_abbrev text FK -< md.LocationAbbr
+postalCode text
+province text fk >-< cb.State 
