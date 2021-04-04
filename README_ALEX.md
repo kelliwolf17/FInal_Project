@@ -27,24 +27,19 @@ We are also interested in doing secondary analysis on the gym, fast food, and BM
 ## Communication Protocols
 WE NEED TO DEFINE COMMUNICATION PROTOCOLS BEFORE SUBMISSION
 
-<<<<<<< HEAD
 Finding Data:
 
-=======
 * Description of the data exploration phase of the project
 
 Finding Data:
->>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
+
 Initial data found on CDC website (see ‘Lessons Learned’ for more info)
 Found data regarding # of gyms and fast food restaurants in US by state on various websites
 Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
 After throwing out CDC data, found diabetes dataset on Kaggle
 
 Cleaning Steps:
-<<<<<<< HEAD
 
-=======
->>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
 Load all data sources into Jupyter Notebook as Pandas dataframes
 Check for null values 
 If any, delete rows
@@ -52,10 +47,8 @@ Ensure data types are consistent, especially for numerical data
 Ensure columns with “State” information are in the same format
 Delete unnecessary columns
 Export to CSV 
-<<<<<<< HEAD
-=======
+
 ![data_sources.png](Resources/Images/data_sources.png)
->>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
 
 * Description of the analysis phase of the project
 
