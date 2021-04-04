@@ -13,7 +13,4 @@ For each of the features relating to diabetes risk factors, we were able to pull
 # Questions we hope to answer with the data
 Primarily, we want to know which risk factors have the strongest correlation to diabetes so we can add these features to our machine learning model and find out whether or not they are a good predictor.
 
-We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
-
-
 
