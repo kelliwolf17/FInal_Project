@@ -16,7 +16,8 @@ We decided to analyze data pertaining to diabetes because we are interested in l
 ** Diabetes Pedigree Function (family history of diabetes)
 ** Age
 
-## Source of data (IMPORT data_sources.png)
+## Source of data 
+![data_sources.png](Resources/Images/data_sources.png)
 
 Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
 
@@ -49,9 +50,9 @@ The main advantages of using linear regression is that it is easy to interpet th
 # Database
 * Database stores static data for use during the project
 * Database interfaces with the project in some format (e.g., scrpaing updates the database, or database connects to the model)
-* includes at least two tables
-* includes at least one join using the database language
-* includes at leaast one connection string (insert database_connection.png here)
+* includes at least two tables ![ER_diagram.png](Resources/Images/ER_diagram.png)
+* includes at least one join using the database language ![sql_queries_used.png](Resources/Images/sql_queries_used.png)
+* includes at leaast one connection string
 
 ![database_connection.png](Resources/Images/database_connection.png)
 
