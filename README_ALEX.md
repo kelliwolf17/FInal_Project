@@ -7,14 +7,15 @@ For the purpose of this project, we have decided to analyze diabetes and it's as
 * Reason we selected this topic
 
 We decided to analyze data pertaining to diabetes because we are interested in learning which risk factors are most effective in predicting a diabetes diagnosis. For this analysis, we found data for the following risk factors: 
-** Pregnancy (amount of times pregnant)
-** Glucose levels (plasma glucose concentration a 2 hours in an oral glucose tolerance test)
-** Blood Pressure (Diastolic blood pressure (mm Hg))
-** Skin Thickness (Triceps skin fold thickness (mm))
-** Insulin levels (2-Hour serum insulin (mu U/ml))
-** Body Mass Index
-** Diabetes Pedigree Function (family history of diabetes)
-** Age
+
+* Pregnancy (amount of times pregnant)
+* Glucose levels (plasma glucose concentration a 2 hours in an oral glucose tolerance test)
+* Blood Pressure (Diastolic blood pressure (mm Hg))
+* Skin Thickness (Triceps skin fold thickness (mm))
+* Insulin levels (2-Hour serum insulin (mu U/ml))
+* Body Mass Index
+* Diabetes Pedigree Function (family history of diabetes)
+* Age
 
 ## Source of data 
 ![data_sources.png](Resources/Images/data_sources.png)
@@ -23,17 +24,27 @@ Primarily, our biggest question is "Which risk factor is the strongest predictor
 
 We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
 
+## Communication Protocols
+WE NEED TO DEFINE COMMUNICATION PROTOCOLS BEFORE SUBMISSION
+
+<<<<<<< HEAD
+Finding Data:
+
+=======
 * Description of the data exploration phase of the project
 
 Finding Data:
-
+>>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
 Initial data found on CDC website (see ‘Lessons Learned’ for more info)
 Found data regarding # of gyms and fast food restaurants in US by state on various websites
 Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
 After throwing out CDC data, found diabetes dataset on Kaggle
 
 Cleaning Steps:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
 Load all data sources into Jupyter Notebook as Pandas dataframes
 Check for null values 
 If any, delete rows
@@ -41,17 +52,16 @@ Ensure data types are consistent, especially for numerical data
 Ensure columns with “State” information are in the same format
 Delete unnecessary columns
 Export to CSV 
+<<<<<<< HEAD
+=======
+![data_sources.png](Resources/Images/data_sources.png)
+>>>>>>> 8710c81e815fc76dc0bc01bd60c61f70da19a7c5
 
-# GitHub
-* All code necessary to perform exploratory analysis
-* Some code necessary to complete the machine learning portion of the project
-* README must include: 
-       * Description of the communication protocols
-       * Outline of the project (we must have this as a file stored in GitHub)
+* Description of the analysis phase of the project
 
 # Machine Learning Model
 
-Luckily, for our model, we had a pretty clean dataset to work with. Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome (yes diabetes or no diabetes). 
+Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv). Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome (yes diabetes or no diabetes). 
 
 There was data on 768 subjects so we had 768 rows of data. We decided to train the model with the first 650 subjects, while using the remaining 118 subjects to test the model. 
 
@@ -62,15 +72,13 @@ The main advantages of using linear regression is that it is easy to interpet th
 
 # Database
 * Database stores static data for use during the project
-* Database interfaces with the project in some format (e.g., scrpaing updates the database, or database connects to the model)
-* includes at least two tables ![ER_diagram.png](Resources/Images/ER_diagram.png)
-* includes at least one join using the database language ![sql_queries_used.png](Resources/Images/sql_queries_used.png)
-* includes at leaast one connection string
+* Database interfaces with the project by connecting with our machine learning model
+![ER_diagram.png](Resources/Images/ER_diagram.png)
+![sql_queries_used.png](Resources/Images/sql_queries_used.png)
 
 ![database_connection.png](Resources/Images/database_connection.png)
 
 # Dashboard
-* storyboard on Google Slides
 * Description of the tool(s) that will be used to create final dashboard
 * Description of interactive element(s)
 
