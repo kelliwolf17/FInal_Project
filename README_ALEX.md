@@ -7,14 +7,15 @@ For the purpose of this project, we have decided to analyze diabetes and it's as
 * Reason we selected this topic
 
 We decided to analyze data pertaining to diabetes because we are interested in learning which risk factors are most effective in predicting a diabetes diagnosis. For this analysis, we found data for the following risk factors: 
-** Pregnancy (amount of times pregnant)
-** Glucose levels (plasma glucose concentration a 2 hours in an oral glucose tolerance test)
-** Blood Pressure (Diastolic blood pressure (mm Hg))
-** Skin Thickness (Triceps skin fold thickness (mm))
-** Insulin levels (2-Hour serum insulin (mu U/ml))
-** Body Mass Index
-** Diabetes Pedigree Function (family history of diabetes)
-** Age
+
+* Pregnancy (amount of times pregnant)
+* Glucose levels (plasma glucose concentration a 2 hours in an oral glucose tolerance test)
+* Blood Pressure (Diastolic blood pressure (mm Hg))
+* Skin Thickness (Triceps skin fold thickness (mm))
+* Insulin levels (2-Hour serum insulin (mu U/ml))
+* Body Mass Index
+* Diabetes Pedigree Function (family history of diabetes)
+* Age
 
 ## Source of data 
 ![data_sources.png](Resources/Images/data_sources.png)
