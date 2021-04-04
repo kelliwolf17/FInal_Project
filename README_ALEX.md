@@ -48,7 +48,7 @@ Ensure columns with “State” information are in the same format
 Delete unnecessary columns
 Export to CSV 
 
-![data_sources.png](Resources/Images/data_sources.png)
+![data_exploration.png](Resources/Images/data_exploration.png)
 
 * Description of the analysis phase of the project
 
