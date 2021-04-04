@@ -14,3 +14,19 @@ For each of the features relating to diabetes risk factors, we were able to pull
 Primarily, we want to know which risk factors have the strongest correlation to diabetes so we can add these features to our machine learning model and find out whether or not they are a good predictor.
 
 We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
+
+## Visualizations
+Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. 
+Screenshots are here: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gce2da4b49a_0_141
+
+### Data sources for visualization
+ - Obesity by state (2019, insufficient data for NJ)
+ - Diabetes by state (2020)
+ - Fast food Restaurants (2018)
+ - Gyms by state (2016)
+
+### Calculated fields
+ - obesity/capita
+ - diabetes/capita
+ - restaurants/captia
+ Calculations located in csvs_for_tableau.ipynb file.
