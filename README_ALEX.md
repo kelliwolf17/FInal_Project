@@ -25,9 +25,22 @@ We are also interested in doing secondary analysis on the gym, fast food, and BM
 
 * Description of the data exploration phase of the project
 
-* Description of the analysis phase of the project
+Finding Data:
 
-* Presentation slides are drafted in Gooogle Slides
+Initial data found on CDC website (see ‘Lessons Learned’ for more info)
+Found data regarding # of gyms and fast food restaurants in US by state on various websites
+Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
+After throwing out CDC data, found diabetes dataset on Kaggle
+
+Cleaning Steps:
+
+Load all data sources into Jupyter Notebook as Pandas dataframes
+Check for null values 
+If any, delete rows
+Ensure data types are consistent, especially for numerical data
+Ensure columns with “State” information are in the same format
+Delete unnecessary columns
+Export to CSV 
 
 # GitHub
 * All code necessary to perform exploratory analysis
