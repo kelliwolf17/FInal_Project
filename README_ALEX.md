@@ -24,18 +24,28 @@ Primarily, our biggest question is "Which risk factor is the strongest predictor
 
 We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
 
+## Communication Protocols
+WE NEED TO DEFINE COMMUNICATION PROTOCOLS BEFORE SUBMISSION
+
 * Description of the data exploration phase of the project
 
+Finding Data:
+Initial data found on CDC website (see ‘Lessons Learned’ for more info)
+Found data regarding # of gyms and fast food restaurants in US by state on various websites
+Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
+After throwing out CDC data, found diabetes dataset on Kaggle
+
+Cleaning Steps:
+Load all data sources into Jupyter Notebook as Pandas dataframes
+Check for null values 
+If any, delete rows
+Ensure data types are consistent, especially for numerical data
+Ensure columns with “State” information are in the same format
+Delete unnecessary columns
+Export to CSV 
+![data_sources.png](Resources/Images/data_sources.png)
+
 * Description of the analysis phase of the project
-
-* Presentation slides are drafted in Gooogle Slides
-
-# GitHub
-* All code necessary to perform exploratory analysis
-* Some code necessary to complete the machine learning portion of the project
-* README must include: 
-       * Description of the communication protocols
-       * Outline of the project (we must have this as a file stored in GitHub)
 
 # Machine Learning Model
 
@@ -50,15 +60,13 @@ The main advantages of using linear regression is that it is easy to interpet th
 
 # Database
 * Database stores static data for use during the project
-* Database interfaces with the project in some format (e.g., scrpaing updates the database, or database connects to the model)
-* includes at least two tables ![ER_diagram.png](Resources/Images/ER_diagram.png)
-* includes at least one join using the database language ![sql_queries_used.png](Resources/Images/sql_queries_used.png)
-* includes at leaast one connection string
+* Database interfaces with the project by connecting with our machine learning model
+![ER_diagram.png](Resources/Images/ER_diagram.png)
+![sql_queries_used.png](Resources/Images/sql_queries_used.png)
 
 ![database_connection.png](Resources/Images/database_connection.png)
 
 # Dashboard
-* storyboard on Google Slides
 * Description of the tool(s) that will be used to create final dashboard
 * Description of interactive element(s)
 
