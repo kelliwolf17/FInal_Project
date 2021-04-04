@@ -53,7 +53,7 @@ The main advantages of using linear regression is that it is easy to interpet th
 * includes at least one join using the database language
 * includes at leaast one connection string (insert database_connection.png here)
 
-![Resources/Images/database_connection.png](database_connection.png)
+![database_connection.png](Resources/Images/database_connection.png)
 
 # Dashboard
 * storyboard on Google Slides
