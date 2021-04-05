@@ -1,6 +1,6 @@
 # Presentation
 
-* Selected topic
+## Diabetes
 
 This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
 
