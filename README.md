@@ -17,20 +17,20 @@ Primarily, our biggest question is "Which risk factor is the strongest predictor
 
 Finding Data:
 
-Initial data found on CDC website (see ‘Lessons Learned’ for more info)
-Found data regarding # of gyms and fast food restaurants in US by state on various websites
-Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
-After throwing out CDC data, found diabetes dataset on Kaggle
+* Initial data found on CDC website (see ‘Lessons Learned’ for more info)
+* Found data regarding # of gyms and fast food restaurants in US by state on various websites
+* Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
+* After throwing out CDC data, found diabetes dataset on Kaggle
 
 Cleaning Steps:
 
-Load all data sources into Jupyter Notebook as Pandas dataframes
-Check for null values 
-If any, delete rows
-Ensure data types are consistent, especially for numerical data
-Ensure columns with “State” information are in the same format
-Delete unnecessary columns
-Export to CSV 
+* Load all data sources into Jupyter Notebook as Pandas dataframes
+* Check for null values 
+* If any, delete rows
+* Ensure data types are consistent, especially for numerical data
+* Ensure columns with “State” information are in the same format
+* Delete unnecessary columns
+* Export to CSV 
 
 ![data_exploration.png](Resources/Images/data_exploration.png)
 
