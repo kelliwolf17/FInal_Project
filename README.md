@@ -1,6 +1,18 @@
-# Presentation
+# Group 10 Final Project
 
-## Diabetes
+This repo fulfills the requirements for the final project for the Data Analytics & Visualization Bootcamp.
+
+# Communication Protocols
+
+Group 10 will be communicating via Zoom meetings and our designated Slack channel. 
+
+# Project Outline
+
+We will be following a 4-segment outline to complete this project in stages. 
+
+
+
+# Predicting Diabetes
 
 This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
 
@@ -54,5 +66,5 @@ The main advantages of using linear regression is that it is easy to interpet th
 ![database_connection.png](Resources/Images/database_connection.png)
 
 # Dashboard
-* Description of the tool(s) that will be used to create final dashboard
-* Description of interactive element(s)
+We plan to primarily use Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard will have the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It will also have the ability to filter by average BMI by state.
+
