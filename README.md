@@ -1,28 +1,18 @@
-# Group 10 Final Project
+# Group 10 Final Project - Predicting Diabetes
 
-This repo fulfills the requirements for the final project for the Data Analytics & Visualization Bootcamp.
+# Overview
 
-# Communication Protocols
+This repo fulfills the requirements for the final project for the Data Analytics & Visualization Bootcamp. The team was able to extract data from online sources, clean the data to increase usability, and then determine relationships from this data. The team primarily communicated through their designated Slack channel and met at least 3 times a week via Zoom. 
 
-Group 10 will be communicating via Zoom meetings and our designated Slack channel. 
-
-# Project Outline
-
-We will be following a 4-segment outline to complete this project in stages. 
-
-
-
-# Predicting Diabetes
-
-This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
+The model we created is intended to be able to predict whether a patient has diabetes. This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
 
 Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
 
 According to “Factors that could explain the increasing prevalence of type 2 diabetes among adults in a Canadian province: a critical review and analysis,” some factors that contribute to diabetes are: Glucose levels, High blood pressure, Skin thickness, Insulin levels, BMI, Family history of diabetes, Age, and Number of pregnancies. 
 
-After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region
+After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region.
 
-## Source of data 
+## Data Sources 
 ![data_sources.png](Resources/Images/data_sources.png)
 
 Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
@@ -46,6 +36,15 @@ Cleaning Steps:
 
 ![data_exploration.png](Resources/Images/data_exploration.png)
 
+
+# Database
+* Database stores static data for use during the project
+* Database interfaces with the project by connecting with our machine learning model
+![ER_diagram.png](Resources/Images/ER_diagram.png)
+![sql_queries_used.png](Resources/Images/sql_queries_used.png)
+
+![database_connection.png](Resources/Images/database_connection.png)
+
 # Machine Learning Model
 
 Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv). Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome. 
@@ -56,14 +55,6 @@ As a group, we decided to use a Linear Regression model. Linear Regression is a 
 
 The main advantages of using linear regression is that it is easy to interpet the output coefficients and when you know the relationship between the independent and dependent variables have a linear relationship, it is the correct model to use because it's less complex than other models. While these advantages are great, there are limitations to this model, as well. For one, outliers can have a big effect on the regression model. Secondarily, the model automatically assumes there is a linear relationship present, which can be a problem if you don't know there is a relationship already. 
 
-
-# Database
-* Database stores static data for use during the project
-* Database interfaces with the project by connecting with our machine learning model
-![ER_diagram.png](Resources/Images/ER_diagram.png)
-![sql_queries_used.png](Resources/Images/sql_queries_used.png)
-
-![database_connection.png](Resources/Images/database_connection.png)
 
 # Dashboard
 We plan to primarily use Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard will have the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It will also have the ability to filter by average BMI by state.
