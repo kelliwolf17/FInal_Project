@@ -34,11 +34,9 @@ Cleaning Steps:
 
 ![data_exploration.png](Resources/Images/data_exploration.png)
 
-* Description of the analysis phase of the project
-
 # Machine Learning Model
 
-Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv). Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome (yes diabetes or no diabetes). 
+Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv). Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome. 
 
 There was data on 768 subjects so we had 768 rows of data. We decided to train the model with the first 650 subjects, while using the remaining 118 subjects to test the model. 
 
