@@ -11,6 +11,11 @@ Primarily, our biggest question is "Which risk factor is the strongest predictor
 According to “Factors that could explain the increasing prevalence of type 2 diabetes among adults in a Canadian province: a critical review and analysis,” some factors that contribute to diabetes are: Glucose levels, High blood pressure, Skin thickness, Insulin levels, BMI, Family history of diabetes, Age, and Number of pregnancies. 
 
 After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region.
+## Related files
+- PPT presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
+- Machine learning file: seg3_ml_model
+- content for visualizations: csvs_for_tablea
+
 
 ## Data Sources 
 ![data_sources.png](Resources/Images/data_sources.png)
@@ -59,3 +64,14 @@ The main advantages of using linear regression is that it is easy to interpet th
 # Dashboard
 We plan to primarily use Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard will have the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It will also have the ability to filter by average BMI by state.
 
+Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. Screenshots are here: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gce2da4b49a_0_141
+
+## Data sources for visualization
+- Obesity by state (2019, insufficient data for NJ)
+- Diabetes by state (2020)
+- Fast food Restaurants (2018)
+- Gyms by state (2016)
+## Calculated fields
+- obesity/capita
+- diabetes/capita
+- restaurants/captia Calculations located in csvs_for_tableau.ipynb file.
