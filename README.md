@@ -2,34 +2,18 @@
 
 * Selected topic
 
-For the purpose of this project, we have decided to analyze diabetes and it's associated risk factors in order to predict the likelihood of a diabetes diagnosis based on certain risk factors.
+This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
 
-* Reason we selected this topic
+Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
 
-We decided to analyze data pertaining to diabetes because we are interested in learning which risk factors are most effective in predicting a diabetes diagnosis. For this analysis, we found data for the following risk factors: 
+According to “Factors that could explain the increasing prevalence of type 2 diabetes among adults in a Canadian province: a critical review and analysis,” some factors that contribute to diabetes are: Glucose levels, High blood pressure, Skin thickness, Insulin levels, BMI, Family history of diabetes, Age, and Number of pregnancies. 
 
-* Pregnancy (amount of times pregnant)
-* Glucose levels (plasma glucose concentration a 2 hours in an oral glucose tolerance test)
-* Blood Pressure (Diastolic blood pressure (mm Hg))
-* Skin Thickness (Triceps skin fold thickness (mm))
-* Insulin levels (2-Hour serum insulin (mu U/ml))
-* Body Mass Index
-* Diabetes Pedigree Function (family history of diabetes)
-* Age
+After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region
 
 ## Source of data 
 ![data_sources.png](Resources/Images/data_sources.png)
 
 Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
-
-We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
-
-## Communication Protocols
-WE NEED TO DEFINE COMMUNICATION PROTOCOLS BEFORE SUBMISSION
-
-Finding Data:
-
-* Description of the data exploration phase of the project
 
 Finding Data:
 
