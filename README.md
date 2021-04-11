@@ -46,7 +46,7 @@ Cleaning Steps:
 * Database stores static data for use during the project
 * Database interfaces with the project by connecting with our machine learning model
 ![ER_diagram.png](Resources/Images/ER_diagram.png)
-![sql_queries_used.png](Resources/Images/sql_queries_used.png)
+![sql_queries_used2.png](Resources/Images/sql_queries_used.png)
 
 ![database_connection.png](Resources/Images/database_connection.png)
 
