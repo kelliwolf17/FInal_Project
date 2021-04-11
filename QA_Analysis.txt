@@ -1,0 +1,47 @@
+ETL
+Testing(White Box Testing)/Notes
+- Restart and Cleared Output
+- No errors, once the code was executed from top to bottom
+- The code is clean and provides thoughtful comments that help the evaluator understand what the code is doing
+- The code is easy to follow
+
+Corrections:
+N/A
+
+----------------------------
+
+Machine Learning Model
+Testing(White Box Testing)/Notes
+- Restart and Cleared Output
+- No errors, once the code was executed from top to bottom
+- The database connection in the file returned data without a problem
+- The join in the file correctly returned data from both clean_gym table and clean_restaurant table
+- After multiple executions the ML model returns a consistent 78.8% accuracy
+- Comments in the code are help and help explain what the code is doing
+- The file is broken down in sections and it gives the reader a high level understanding of what the section of code does before diving into the code itself
+
+Corrections:
+N/A
+
+----------------------------
+
+Database Integration
+Testing(White Box Testing)/Notes
+- Seperate file created to test DB connection (testingMySQLDB.ipynd)
+- When executing queries in the testingMySQLDB file no error was returned
+- Appropriate tables are being returned when called in the query
+- Comments are help explain the code
+
+Corrections:
+N/A
+
+----------------------------
+
+Dashboard
+Testing(White Box Testing)
+- When using the dashboard there was no failure
+- All graphs and diagrams are correctly displayed
+- Findings help understand the graphs
+
+Corrections:
+N/A
