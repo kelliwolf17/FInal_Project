@@ -52,13 +52,33 @@ Cleaning Steps:
 
 # Machine Learning Model
 
-Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv). Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" So we decided to use each of the risk factors as the features of the model and running them against the outcome. 
+The code for our model can be found in the file: seg2_ml_model.ipynb. Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv), 
+so there was very little pre-processing to take care of. 
 
-There was data on 768 subjects so we had 768 rows of data. We decided to train the model with the first 650 subjects, while using the remaining 118 subjects to test the model. 
+Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" Therefore, we decided to use each of the risk factors as the features of the model and running them against the outcome (diabetes or no diabetes).
 
-As a group, we decided to use a Linear Regression model. Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models are target prediction value based on independent variables. It is mostly used for finding the relationship between variables and forecasting. This is the model we chose to use, while realizing it has its own advantages and disadvantages. We decided to use this model, ultimately, because the risk factors typically have a linear relationship with each other.
+There was data on 768 subjects so we had 768 rows of data. We decided to train the model with the first 650 subjects (our training set), while using the remaining 118 subjects to test the model (our testing set). The model uses the training set to learn from it then uses the testing dataset to assess the performance of the model.
 
-The main advantages of using linear regression is that it is easy to interpet the output coefficients and when you know the relationship between the independent and dependent variables have a linear relationship, it is the correct model to use because it's less complex than other models. While these advantages are great, there are limitations to this model, as well. For one, outliers can have a big effect on the regression model. Secondarily, the model automatically assumes there is a linear relationship present, which can be a problem if you don't know there is a relationship already. 
+We decided to use a logistic regression model because it primarily predicts binary outcomes (there are only two outcomes). In this case, the model will predict whether the subject has diabetes or does not have diabetes. It takes multiple variables to arrive at one of two destinations. It analyzes the available data, and when presented with new data, mathematically determines its probability of belonging to a class.
+
+Benefits of Logistic Regression Models 
+* It is easy to implement and interpret and is very efficient to train.
+* It provides not only the measure of predictability, but also its direction of assocation (positive or negative).
+* It is very fast at classifying unknown records
+* It can interpret model coefficients as indicators of feature importance
+
+Limitations of Logistic Regression Models
+* It constructs linear boundaries
+* There is an assumption of linearity between the dependent and independent variables.
+* It is tough to obtain complex relationships using logistic regression. 
+
+There was no change in model choice between Segment 2 and Segment 3. The model stayed the same, but we mis-identified the model we were using. In our last project write-up, we inaccurately stated that we used a Linear Regression model, when in fact, we were using a Logistic Regression model. 
+
+As of right now, there is stll some work to do on the model, as it is very basic while still being pretty accurate. It would be helpful to specify a random state of 1 to ensure that the same rows are assigned to train and test each set. It would also be be helpful to stratify the dataset so we can be sure that the dataset is split proportionally. This will be included in the model for the final presentation and submission.
+
+The accuracy score compares the actual outcome values from the test set against the model's predicted values and reflects the percentage of predictions that are correct.
+
+Our current accuracy score is 78.81%, which is pretty good, but we are hoping the additions to the model will help make it more accurate.
 
 
 # Dashboard
