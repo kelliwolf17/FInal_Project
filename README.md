@@ -2,11 +2,11 @@
 
 # Overview
 
-This repo fulfills the requirements for the final project for the Data Analytics & Visualization Bootcamp. The team was able to extract data from online sources, clean the data to increase usability, and then determine relationships from this data. The team primarily communicated through their designated Slack channel and met at least 3 times a week via Zoom. 
+This repo fulfills the requirements for the final project for the Data Analytics & Visualization Bootcamp. The team was able to extract data from online sources, clean the data to increase usability, and then determine relationships from this data.  
 
 The model we created is intended to be able to predict whether a patient has diabetes. This topic was chosen because many Americans are affected by diabetes in some form, and the ability to predict whether or not someone has it based on a few factors is valuable information to help understand the disease. 
 
-Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
+Primarily, our biggest question was regarding which risk factor is the strongest predictor of diabetes. We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
 
 According to “Factors that could explain the increasing prevalence of type 2 diabetes among adults in a Canadian province: a critical review and analysis,” some factors that contribute to diabetes are: Glucose levels, High blood pressure, Skin thickness, Insulin levels, BMI, Family history of diabetes, Age, and Number of pregnancies. 
 
