@@ -38,9 +38,16 @@ In order to clean the data, the individual CSV files were loaded into Pandas dat
 The database used for this project is a MySQL database hosted on an AWS server. The clean CSV files were inserted into the database. 
 * Database stores static data for use during the project
 * Database interfaces with the project by connecting with our machine learning model
+
+ER Diagram with 4 main data sources:
+
 ![ER_diagram.png](Resources/Images/ER_diagram.png)
+
+SQL Queries used:
+
 ![sql_queries_used2.png](Resources/Images/sql_queries_used2.png)
 
+Code used to connect database to Jupyter Notebook:
 ![database_connection.png](Resources/Images/database_connection.png)
 
 # Machine Learning Model
