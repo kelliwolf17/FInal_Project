@@ -14,7 +14,7 @@ After running models on this dataset, we also wanted to see any correlations wit
 ## Related files
 - PPT presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
 - Machine learning file: seg2_ml_model.ipynb
-- Content for Tableau: csvs_for_tableau
+- Content for Tableau: csvs_for_tableau/tableau_df.csv, tableau_bins.ipynb
 
 
 ## Data Sources 
