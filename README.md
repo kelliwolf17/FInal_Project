@@ -84,14 +84,18 @@ Our current accuracy score is 78.81%, which is pretty good, but we are hoping th
 # Dashboard
 We plan to primarily use Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard will have the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It will also have the ability to filter by average BMI by state.
 
-Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. Screenshots are here: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gce2da4b49a_0_141
+Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. The Tableau Story is located here: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProject_16180665161890/Diabetes?publish=yes
 
 ## Data sources for visualization
 - Obesity by state (2019, insufficient data for NJ)
 - Diabetes by state (2020)
 - Fast food Restaurants (2018)
 - Gyms by state (2016)
+- State and National Parks
 ## Calculated fields
 - obesity/capita
 - diabetes/capita
 - restaurants/captia Calculations located in csvs_for_tableau.ipynb file.
+## Bining
+- To better show differences on the map, we binned the obesity/capita, restaurant/capita and gym/capita into bins based on quartiles from the describe() function. See tableau_bins jupyter notebook.
+
