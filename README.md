@@ -12,37 +12,30 @@ According to “Factors that could explain the increasing prevalence of type 2 d
 
 After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region.
 ## Related files
-- PPT presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
+- Presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
 - Machine learning file: seg2_ml_model.ipynb
-- Content for Tableau: csvs_for_tableau/tableau_df.csv, tableau_bins.ipynb
+- Content for Tableau: csvs_for_tableau
+- Resources folder contains all CSV files
 
 
 ## Data Sources 
+
+Our first question was determining which risk factor is the strongest predictor of diabetes. We wanted to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also wanted to see how each of these risk factors correlate with each other, independent of diabetes.
+
+Initially data was found on the CDC website. The CDC puts out a survey every year called the Behavioral Risk Factor Surveillance System, and with this data, they are able to track many different factors about the health of the American population. Unfortunately, the data that can be exported to CSV is aggregated. The raw data is in a very complex ASCII that requires special software to analyze it that is not covered by this particular course. 
+
+Once the CDC data was determined unusable, a diabetes dataset was found on Kaggle. This dataset covered a study on the Pima Native Americans. The women of the Pima tribe have a high rate of diabetes, and eventually the published data made its way onto Kaggle. In order to bolster our analysis, further datasets were found regarding the number of gyms, national and state parks, and fast food restaurants in the US as BMI (or obesity) is a strong indicator of diabetes. With this information we could determine how healthy certain cities are based on how many gyms and parks are available compared to the number of fast food restaurants. Any further datasets used were strictly for joining purposes.
+
 ![datasources](https://user-images.githubusercontent.com/71397190/114327899-93fbf380-9b00-11eb-95ef-b4b3390c96b2.PNG)
 
-Primarily, our biggest question is determining which risk factor is the strongest predictor of diabetes. We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
+In order to clean the data, the individual CSV files were loaded into Pandas dataframes using Jupyter Notebook. We first checked for null values and, if any, deleted those rows. Then the datatypes were checked and changed to ensure consistency among each dataframe and for numerical data. Then any columns containing data regarding US States were changed to the same format. Then any unnecessary columns were deleted from each dataframe. Lastly, all the cleaned dataframes were exported to new CSV files.
 
-Finding Data:
-
-* Initial data found on CDC website (see ‘Lessons Learned’ for more info)
-* Found data regarding # of gyms and fast food restaurants in US by state on various websites
-* Needed to find other datasets to be able to join CDC data and gym/restaurant data (i.e. BMI data)
-* After throwing out CDC data, found diabetes dataset on Kaggle
-
-Cleaning Steps:
-
-* Load all data sources into Jupyter Notebook as Pandas dataframes
-* Check for null values 
-* If any, delete rows
-* Ensure data types are consistent, especially for numerical data
-* Ensure columns with “State” information are in the same format
-* Delete unnecessary columns
-* Export to CSV 
-
-![data_exploration.png](Resources/Images/data_exploration.png)
+![dataframes](https://user-images.githubusercontent.com/71397190/114333921-1986a000-9b0f-11eb-818b-f837f87efc5d.PNG)
 
 
 # Database
+
+The database used for this project is a MySQL database hosted on an AWS server. The clean CSV files were inserted into the database. 
 * Database stores static data for use during the project
 * Database interfaces with the project by connecting with our machine learning model
 ![ER_diagram.png](Resources/Images/ER_diagram.png)
@@ -82,20 +75,19 @@ Our current accuracy score is 78.81%, which is pretty good, but we are hoping th
 
 
 # Dashboard
-We plan to primarily use Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard will have the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It will also have the ability to filter by average BMI by state.
+We used Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard has the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It also has the ability to filter by average BMI by state.
 
-Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. The Tableau Story is located here: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProject_16180665161890/Diabetes?publish=yes
+* Visualizations for the machine learning analysis were done in Python/Jupyter Notebook
+* Visualizations correlating features for the machine learning analysis were done in Tableau 
+* Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau 
+* Link to dashboard: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProject_16180665161890/Diabetes?publish=yes
 
-## Data sources for visualization
-- Obesity by state (2019, insufficient data for NJ)
-- Diabetes by state (2020)
-- Fast food Restaurants (2018)
-- Gyms by state (2016)
-- State and National Parks
 ## Calculated fields
 - obesity/capita
 - diabetes/capita
 - restaurants/captia Calculations located in csvs_for_tableau.ipynb file.
-## Bining
+## Binning
 - To better show differences on the map, we binned the obesity/capita, restaurant/capita and gym/capita into bins based on quartiles from the describe() function. See tableau_bins jupyter notebook.
 
+# Technologies Used
+Matplotlib, Seaborn, Plotly, Scikit-Learn, My SQL, AWS, Tableau
