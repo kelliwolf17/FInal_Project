@@ -124,7 +124,6 @@ Testing(White Box Testing)/Notes
 Corrections:
 - N/A
 
-----------------------------
 
 ### Database Integration
 Testing(White Box Testing)/Notes
@@ -136,7 +135,6 @@ Testing(White Box Testing)/Notes
 Corrections:
 - N/A
 
-----------------------------
 
 ### Dashboard
 Testing(White Box Testing)
