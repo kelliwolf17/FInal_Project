@@ -20,7 +20,7 @@ After running models on this dataset, we also wanted to see any correlations wit
 ## Data Sources 
 ![data_sources.png](Resources/Images/data_sources.png)
 
-Primarily, our biggest question is "Which risk factor is the strongest predictor of diabetes?" We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
+Primarily, our biggest question is determining which risk factor is the strongest predictor of diabetes. We want to know which ones correlate the strongest so we can add these features to our machine learning model and find out whether or not they are a good predictor. We also want to see how each of these risk factors correlate with each other, independent of diabetes.
 
 Finding Data:
 
