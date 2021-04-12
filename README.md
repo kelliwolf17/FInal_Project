@@ -13,7 +13,7 @@ According to “Factors that could explain the increasing prevalence of type 2 d
 After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region.
 ## Related files
 - PPT presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
-- Machine learning file: seg3_ml_model
+- Machine learning file: seg2_ml_model.ipynb
 - Content for Tableau: csvs_for_tableau
 
 
