@@ -117,7 +117,7 @@ Testing(White Box Testing)/Notes
 - No errors, once the code was executed from top to bottom
 - The database connection in the file returned data without a problem
 - The join in the file correctly returned data from both clean_gym table and clean_restaurant table
-- After multiple executions the ML model returns ~ 78.1% accuracy
+- After multiple executions the ML model returns 77.6% accuracy
 - Comments in the code are help and help explain what the code is doing
 - The file is broken down in sections and it gives the reader a high level understanding of what the section of code does before diving into the code itself
 
