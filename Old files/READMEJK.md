@@ -1,32 +1,15 @@
-# Selected topic
+## Week 3 Visualization Improvements
 
-For the purpose of this project, we have decided to analyze diabetes and it's associated risk factors. 
+### Data manipulation steps
+ - Added another data layer for analysis - State and National Parks. See Parks.csv. 
+ - Binning: To better show differences on the map, we binned the obesity/capita, restaurant/capita and gym/capita into bins based on quartiles from the describe() function.   
+        See tableau_bins jupyter notebook.
 
-# Reason we selected this topic
+ - See difference between binning and using raw data.
+ ![Screenshots](https://user-images.githubusercontent.com/72076683/114276658-3cb92e80-99ed-11eb-945d-024fc99dd0ad.png)       
 
-We decided to analyze data pertaining to diabetes because we are interested in learning which risk factors are most effective in predicting a diabetes diagnosis. For this analysis, we found data for the following risk factors: Age, Body Mass Index (BMI), Education, Ethnicity, Exercise, Fast Food, Gyms, Hypertension, Income, Sex, and Tobacco Use. 
+### Tableau changes
+ - Created a story and published it to Tableau public: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProjectCurrent4-11/Diabetes?publish=yes
+ - Created a map with the obesity bins and added a filter for the other factors - restaurants/capita, gyms/capita, parks/capita and parks #. 
+ - Ensured color scheme is color blind friendly. Used this source to determine colors to use: https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40       
 
-# Source of data
-
-For each of the features relating to diabetes risk factors, we were able to pull data directly from the cdc.gov website. For each feature we want to analyze, we pulled data for the years 2000 through 2019. We also pulled gym data from statista.com and fast food data from a Kaggle dataset.
-
-# Questions we hope to answer with the data
-Primarily, we want to know which risk factors have the strongest correlation to diabetes so we can add these features to our machine learning model and find out whether or not they are a good predictor.
-
-We are also interested in doing secondary analysis on the gym, fast food, and BMI data to see what kind of correlation there is. 
-
-## Visualizations
-Visualizations for the machine learning analysis were done in Python/Jupyter Notebook. Visualizations correlating features for the machine learning analysis were also done in Tableau. Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau. 
-Screenshots are here: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gce2da4b49a_0_141
-
-### Data sources for visualization
- - Obesity by state (2019, insufficient data for NJ)
- - Diabetes by state (2020)
- - Fast food Restaurants (2018)
- - Gyms by state (2016)
-
-### Calculated fields
- - obesity/capita
- - diabetes/capita
- - restaurants/captia
- Calculations located in csvs_for_tableau.ipynb file.
