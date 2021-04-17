@@ -13,6 +13,7 @@ According to “Factors that could explain the increasing prevalence of type 2 d
 After running models on this dataset, we also wanted to see any correlations with the number of fast food restaurants and gyms in the region.
 ## Related files
 - Presentation: https://docs.google.com/presentation/d/1x6rKplWhXvLhmRE-Nq8vVQS1ZSTw0tYrL8jAP8YB5nE/edit#slide=id.gcc1bccc427_0_4
+- Dashboard: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProjectDashboard/DiabetesStory?publish=yes
 - Machine learning file: seg2_ml_model.ipynb
 - Content for Tableau: csvs_for_tableau
 - Resources folder contains all CSV files
@@ -85,7 +86,7 @@ Our current accuracy score is 77.6% which shows that out of the 192 tested subje
 14 of the subjects from our test data were predicted to be negative for diabetes, but were actually positive.
 40 of the subjects from our test data were predicted to be positive diabetes, and were actually negative.
 
-
+![screenshot](https://user-images.githubusercontent.com/72076683/115126027-cc348380-9f91-11eb-999e-0ce660036e0f.png)
 
 # Dashboard
 We used Tableau as our main visualization tool and to build the dashboard for the final project. The dashboard has the option to toggle between different quartiles regarding fast food restaurants and gyms per capita, diabetes and BMI data. It also has the ability to filter by average BMI by state.
@@ -93,7 +94,7 @@ We used Tableau as our main visualization tool and to build the dashboard for th
 * Visualizations for the machine learning analysis were done in Python/Jupyter Notebook
 * Visualizations correlating features for the machine learning analysis were done in Tableau 
 * Visualizations comparing obesity, gyms and restaurants per captia were completed in Tableau 
-* Link to dashboard: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProject_16180665161890/Diabetes?publish=yes
+* Link to dashboard: https://public.tableau.com/profile/jennifer1946#!/vizhome/DiabetesFinalProjectDashboard/DiabetesStory?publish=yes
 
 ## Calculated fields
 - obesity/capita
