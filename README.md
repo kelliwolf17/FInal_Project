@@ -52,12 +52,12 @@ Code used to connect database to Jupyter Notebook:
 
 # Machine Learning Model
 
-The code for our model can be found in the file: seg2_ml_model.ipynb. Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv), 
+The code for our model can be found in the file: seg3_ml_model.ipynb. Luckily, for our model, we had a pretty clean dataset to work with (diabetes.csv), 
 so there was very little pre-processing to take care of. 
 
-Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" Therefore, we decided to use each of the risk factors as the features of the model and running them against the outcome (diabetes or no diabetes).
+Our main question when beginning this project was "What risk factors are the strongest indicators of diabetes?" Therefore, we decided to use each of the risk factors as the features of the model (X) and using the outcome as the Y (diabetes or no diabetes).
 
-There was data on 768 subjects so we had 768 rows of data. We decided to train the model with the first 650 subjects (our training set), while using the remaining 118 subjects to test the model (our testing set). The model uses the training set to learn from it then uses the testing dataset to assess the performance of the model.
+There was data on 768 subjects so we had 768 rows of data. We decided to train the model with 75% of the data, while using the remaining 25% to test the model (our testing set). The model uses the training set to learn from it then uses the testing dataset to assess the performance of the model. We split our data into training and testing data using the X_train, X_test, y_train, y_test module from sklearn.
 
 We decided to use a logistic regression model because it primarily predicts binary outcomes (there are only two outcomes). In this case, the model will predict whether the subject has diabetes or does not have diabetes. It takes multiple variables to arrive at one of two destinations. It analyzes the available data, and when presented with new data, mathematically determines its probability of belonging to a class.
 
@@ -72,13 +72,19 @@ Limitations of Logistic Regression Models
 * There is an assumption of linearity between the dependent and independent variables.
 * It is tough to obtain complex relationships using logistic regression. 
 
-There was no change in model choice between Segment 2 and Segment 3. The model stayed the same, but we mis-identified the model we were using. In our last project write-up, we inaccurately stated that we used a Linear Regression model, when in fact, we were using a Logistic Regression model. 
+There was no change in model choice between Segment 2 and Segment 3.
 
-As of right now, there is stll some work to do on the model, as it is very basic while still being pretty accurate. It would be helpful to specify a random state of 1 to ensure that the same rows are assigned to train and test each set. It would also be be helpful to stratify the dataset so we can be sure that the dataset is split proportionally. This will be included in the model for the final presentation and submission.
+We initially ran the model with all associated risk factors as features. The initial accuracy score was 77.6%. We noticed that Blood Pressure and SkinThickness were poor predictors, so we removed those features to re-train the model, thinking it would benefit the model and result in a more accurate model. As it turned out, removing these features actually made the model less accurate so we put those features back in.
 
 The accuracy score compares the actual outcome values from the test set against the model's predicted values and reflects the percentage of predictions that are correct.
 
-Our current accuracy score is 78.81%, which is pretty good, but we are hoping the additions to the model will help make it more accurate.
+Our current accuracy score is 77.6% which shows that out of the 192 tested subjects, 149 of them were placed accurately into positive (1) or negative (0) for diabetes. The confusion matrix is below. This shows that:
+
+109 of the subjects from our test data were predicted to be positive for diabetes and were actually positive.
+29 of the subjects from our test data were predicted to be positive for diabetes, but were actually negative.
+14 of the subjects from our test data were predicted to be negative for diabetes, but were actually positive.
+40 of the subjects from our test data were predicted to be positive diabetes, and were actually negative.
+
 
 
 # Dashboard
