@@ -75,16 +75,16 @@ Limitations of Logistic Regression Models
 
 There was no change in model choice between Segment 2 and Segment 3.
 
-We initially ran the model with all associated risk factors as features. The initial accuracy score was 77.6%. We noticed that Blood Pressure and SkinThickness were poor predictors, so we removed those features to re-train the model, thinking it would benefit the model and result in a more accurate model. As it turned out, removing these features actually made the model less accurate so we put those features back in.
+We initially ran the model with all associated risk factors as features. The initial accuracy score was 77.6%. We noticed that Blood Pressure and SkinThickness were poor predictors, so we removed those features to re-train the model, thinking it would benefit the model and result in a more accurate model. As it turned out, removing these features actually made the model less accurate. Our most accurate model occurred after removing Insulin as a feature. While 78.13% is still a fairly accurate model, we do believe the model would achieve a higher score with a larger dataset.
 
 The accuracy score compares the actual outcome values from the test set against the model's predicted values and reflects the percentage of predictions that are correct.
 
-Our current accuracy score is 77.6% which shows that out of the 192 tested subjects, 149 of them were placed accurately into positive (1) or negative (0) for diabetes. The confusion matrix is below. This shows that:
+Our final accuracy score is 78.125% which shows that out of the 192 tested subjects, 150 of them were placed accurately into positive (1) or negative (0) for diabetes. The confusion matrix is below. This shows that:
 
 109 of the subjects from our test data were predicted to be positive for diabetes and were actually positive.
-29 of the subjects from our test data were predicted to be positive for diabetes, but were actually negative.
+28 of the subjects from our test data were predicted to be positive for diabetes, but were actually negative.
 14 of the subjects from our test data were predicted to be negative for diabetes, but were actually positive.
-40 of the subjects from our test data were predicted to be positive diabetes, and were actually negative.
+41 of the subjects from our test data were predicted to be positive diabetes, and were actually negative.
 
 ![screenshot](https://user-images.githubusercontent.com/72076683/115126027-cc348380-9f91-11eb-999e-0ce660036e0f.png)
 
